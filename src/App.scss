@@ -1,0 +1,89 @@
+%handleFlex {
+  display: flex;
+  justify-content: center;
+}
+
+%centerCollection {
+  @extend %handleFlex;
+  align-items: center;
+}
+
+%bottomCollection {
+  @extend %handleFlex;
+  align-items: flex-end;
+}
+
+%spaceBCollection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%spaceECollection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.App {
+  // @extend %centerCollection;
+  width: 500px;
+  margin: 20px auto;
+  h1 {
+    text-align: center;
+  }
+  .input_container {
+    border: 1px solid rgb(248, 47, 255);
+    padding: 50px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    @extend %bottomCollection;
+    .fruits {
+      padding: 0 3px;
+      list-style: none;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      gap: 4px;
+      flex-wrap: wrap;
+      .fruit {
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        box-shadow: rgba(0, 255, 208, 0.29) 0px 5px 15px;
+        margin: 3px auto;
+        padding: 0 5px;
+        background-color: rgb(160, 160, 160);
+        border: 1px solid rgba(0, 255, 110, 0.359);
+        border-radius: 30px;
+        @extend %spaceECollection;
+        div.remove_btn {
+          color: red;
+          cursor: pointer;
+          padding: 0px 3px;
+        }
+      }
+    }
+
+    .fruit_input {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid greenyellow;
+      outline: none;
+      border-radius: 30px;
+      &.error {
+        border: 1px solid red;
+      }
+    }
+  }
+  span[role='button'] {
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+    padding: 3px;
+    &:active {
+      background-color: rgba(0, 255, 255, 0.567);
+    }
+  }
+}

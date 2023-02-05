@@ -1,0 +1,73 @@
+.App .input_container {
+  display: flex;
+  justify-content: center;
+}
+
+.App .input_container {
+  align-items: flex-end;
+}
+
+.App .input_container .fruits .fruit {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.App {
+  width: 500px;
+  margin: 20px auto;
+}
+.App h1 {
+  text-align: center;
+}
+.App .input_container {
+  border: 1px solid rgb(248, 47, 255);
+  padding: 50px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+}
+.App .input_container .fruits {
+  padding: 0 3px;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.App .input_container .fruits .fruit {
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  box-shadow: rgba(0, 255, 208, 0.29) 0px 5px 15px;
+  margin: 3px auto;
+  padding: 0 5px;
+  background-color: rgb(160, 160, 160);
+  border: 1px solid rgba(0, 255, 110, 0.359);
+  border-radius: 30px;
+}
+.App .input_container .fruits .fruit div.remove_btn {
+  color: red;
+  cursor: pointer;
+  padding: 0px 3px;
+}
+.App .input_container .fruit_input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid greenyellow;
+  outline: none;
+  border-radius: 30px;
+}
+.App .input_container .fruit_input.error {
+  border: 1px solid red;
+}
+.App span[role=button] {
+  cursor: pointer;
+  background-color: aqua;
+  color: black;
+  padding: 3px;
+}
+.App span[role=button]:active {
+  background-color: rgba(0, 255, 255, 0.567);
+}/*# sourceMappingURL=App.css.map */
